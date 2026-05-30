@@ -1,0 +1,213 @@
+/* Google Fonts para darle un toque elegante y femenino a los títulos */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    /* Degradado suave en tonos salmón, melocotón y fondo cálido */
+    background: linear-gradient(135deg, #fceae6 0%, #fbe3db 50%, #f3cac0 100%);
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #4a3b32; /* Marrón sutil en lugar de negro puro para mayor suavidad */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contenedor {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+/* Título principal del Congreso */
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    color: #8c5345; /* Salmón oscuro/terracota elegante */
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+/* Subtítulo o nombre del evento */
+.subtitulo-congreso {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #b57c6d;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+/* El contenedor del número principal */
+#numero {
+    background: rgba(255, 255, 255, 0.85); /* Blanco ligeramente traslúcido */
+    color: #703d31;
+    font-size: 100px; /* Un poco más grande para que impacte */
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    padding: 35px;
+    border-radius: 24px;
+    margin-bottom: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    /* Sombra difuminada y suave, nada pesada */
+    box-shadow: 0 15px 35px rgba(140, 83, 69, 0.15);
+    backdrop-filter: blur(5px); /* Efecto esmerilado moderno */
+}
+
+/* Contenedor para alinear tus dos botones */
+.botones-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo base para los botones */
+button {
+    flex: 1;
+    max-width: 220px;
+    background: #e08b77; /* Color salmón hermoso */
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 50px; /* Botones más redondeados y amigables */
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(224, 139, 119, 0.3);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Espacio entre el emoji/icono y el texto */
+}
+
+/* Diferenciar el botón de eliminado si quieres que se vea un poco más neutral */
+button.btn-eliminado {
+    background: #c98a7c;
+    box-shadow: 0 8px 20px rgba(201, 138, 124, 0.3);
+}
+
+button:hover {
+    transform: translateY(-3px); /* Efecto de flotar hacia arriba */
+    background: #d47660; /* Un tono un poco más vivo al pasar el cursor */
+    box-shadow: 0 12px 25px rgba(212, 118, 96, 0.4);
+}
+
+button:active {
+    transform: translateY(-1px);
+}
+
+/* Títulos de las secciones de abajo (Eliminados / Ganadores) */
+h2 {
+    font-size: 20px;
+    color: #8c5345;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* Listas de resultados */
+#listaGanadores, #listaEliminados {
+    list-style: none;
+    padding: 0;
+    max-height: 180px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Cada elemento de la lista */
+#listaGanadores li, #listaEliminados li {
+    background: rgba(255, 255, 255, 0.5); /* Tarjetas semi-transparentes */
+    color: #5a4540;
+    margin: 0 auto;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 18px;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+    transition: all 0.2s;
+}
+
+/* Un toque dorado sutil para resaltar al ganador en la lista */
+.listas {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    width: 100%;
+}
+
+.columna {
+    flex: 1; /* Esto obliga a que ambas columnas midan exactamente lo mismo */
+    min-width: 250px;
+}
+
+h2 {
+    color: #8c5345;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 5px; /* Espacio para que la scrollbar no pise el texto */
+}
+
+li {
+    background: rgba(255,255,255,0.65);
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    border-radius: 12px;
+    font-size: 18px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    border: 1px solid rgba(255,255,255,0.4);
+    box-sizing: border-box;
+}
+
+/* Estilo exclusivo y elegante para la lista de ganadores */
+#listaGanadores li {
+    background: rgba(255, 247, 235, 0.9);
+    color: #8a6421;
+    border: 1px solid rgba(230, 190, 130, 0.3);
+    font-weight: 600;
+}
+
+/* Efectos de animación */
+.ganador-efecto {
+    animation: ganador 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+
+@keyframes ganador {
+    0% { transform: scale(0.7); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Personalización elegante de la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d47660;
+    border-radius: 10px;
+}
