@@ -20,7 +20,7 @@ function animarSeleccion(tipo){
     btnEliminado.disabled = true;
     btnGanador.disabled = true;
     let animacion = setInterval(() => {
-        let random = Math.floor(Math.random() * 150) + 1;
+        let random = Math.floor(Math.random() * 120) + 1;
         numero.innerHTML = random;
     }, 80);
     setTimeout(() => {
