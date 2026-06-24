@@ -9,7 +9,7 @@ const listaGanadores = document.getElementById("listaGanadores");
 let participantes = [];
 
 // Crear participantes del 1 al 120
-for(let i = 1; i <= 120; i++){
+for(let i = 1; i <= 201; i++){
     participantes.push(i);
 }
 function animarSeleccion(tipo){
@@ -20,7 +20,7 @@ function animarSeleccion(tipo){
     btnEliminado.disabled = true;
     btnGanador.disabled = true;
     let animacion = setInterval(() => {
-        let random = Math.floor(Math.random() * 120) + 1;
+        let random = Math.floor(Math.random() * 201) + 1;
         numero.innerHTML = random;
     }, 80);
     setTimeout(() => {

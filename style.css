@@ -1,13 +1,13 @@
-/* Google Fonts para darle un toque elegante y femenino a los títulos */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Poppins:wght@300;400;600&display=swap');
+/* Google Fonts con un toque moderno, dinámico y tecnológico para jóvenes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap');
 
 body {
     margin: 0;
     padding: 0;
-    /* Degradado suave en tonos salmón, melocotón y fondo cálido */
-    background: linear-gradient(135deg, #fceae6 0%, #fbe3db 50%, #f3cac0 100%);
+    /* Degradado moderno de azul profundo a morado vibrante */
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 40%, #3b0764 100%);
     font-family: 'Poppins', Arial, sans-serif;
-    color: #4a3b32; /* Marrón sutil en lugar de negro puro para mayor suavidad */
+    color: #f1f5f9; /* Blanco slate suave para alta legibilidad */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,38 +23,43 @@ body {
 
 /* Título principal del Congreso */
 h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 42px;
-    color: #8c5345; /* Salmón oscuro/terracota elegante */
+    font-weight: 700;
+    /* Texto con degradado de blanco a azul claro/morado */
+    background: linear-gradient(90deg, #ffffff, #a5b4fc, #c084fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 5px;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+    filter: drop-shadow(0px 2px 8px rgba(165, 180, 252, 0.3));
 }
 
 /* Subtítulo o nombre del evento */
 .subtitulo-congreso {
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    letter-spacing: 2px;
-    color: #b57c6d;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: #38bdf8; /* Azul cielo brillante tipo neón */
     text-transform: uppercase;
     margin-bottom: 30px;
 }
 
-/* El contenedor del número principal */
+/* El contenedor del número principal (Efecto Glassmorphism futurista) */
 #numero {
-    background: rgba(255, 255, 255, 0.85); /* Blanco ligeramente traslúcido */
-    color: #703d31;
-    font-size: 100px; /* Un poco más grande para que impacte */
-    font-family: 'Playfair Display', serif;
-    font-weight: bold;
+    background: rgba(255, 255, 255, 0.07); /* Fondo blanco súper traslúcido */
+    color: #ffffff;
+    font-size: 110px; /* Un toque más imponente */
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
     padding: 35px;
     border-radius: 24px;
     margin-bottom: 35px;
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    /* Sombra difuminada y suave, nada pesada */
-    box-shadow: 0 15px 35px rgba(140, 83, 69, 0.15);
-    backdrop-filter: blur(5px); /* Efecto esmerilado moderno */
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    /* Sombra con brillo neón morado/azul muy sutil */
+    box-shadow: 0 20px 40px rgba(99, 102, 241, 0.15), inset 0 1px 0 rgba(255,255,255,0.2);
+    backdrop-filter: blur(12px); /* Efecto esmerilado premium */
+    text-shadow: 0 0 20px rgba(56, 189, 248, 0.6); /* Brillo en el número */
 }
 
 /* Contenedor para alinear tus dos botones */
@@ -65,46 +70,47 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Estilo base para los botones */
+/* Estilo base para los botones (Degradado Azul/Morado) */
 button {
     flex: 1;
     max-width: 220px;
-    background: #e08b77; /* Color salmón hermoso */
+    background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%); /* Azul a Morado */
     color: white;
     border: none;
     padding: 15px 25px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
-    border-radius: 50px; /* Botones más redondeados y amigables */
+    border-radius: 50px;
     cursor: pointer;
-    box-shadow: 0 8px 20px rgba(224, 139, 119, 0.3);
-    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(168, 85, 247, 0.3);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px; /* Espacio entre el emoji/icono y el texto */
+    gap: 8px;
 }
 
-/* Diferenciar el botón de eliminado si quieres que se vea un poco más neutral */
+/* Botón de eliminado: Una variante más oscura o azulada */
 button.btn-eliminado {
-    background: #c98a7c;
-    box-shadow: 0 8px 20px rgba(201, 138, 124, 0.3);
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); /* Degradado puramente azul */
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
 }
 
 button:hover {
-    transform: translateY(-3px); /* Efecto de flotar hacia arriba */
-    background: #d47660; /* Un tono un poco más vivo al pasar el cursor */
-    box-shadow: 0 12px 25px rgba(212, 118, 96, 0.4);
+    transform: translateY(-4px); /* Flota un poco más */
+    filter: brightness(1.15); /* Se ilumina al pasar el cursor */
+    box-shadow: 0 15px 30px rgba(168, 85, 247, 0.5);
 }
 
 button:active {
     transform: translateY(-1px);
 }
 
-/* Títulos de las secciones de abajo (Eliminados / Ganadores) */
+/* Títulos de las secciones de abajo */
 h2 {
-    font-size: 20px;
-    color: #8c5345;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 22px;
+    color: #e2e8f0;
     margin-top: 35px;
     margin-bottom: 15px;
     display: flex;
@@ -113,101 +119,83 @@ h2 {
     gap: 8px;
 }
 
-/* Listas de resultados */
-#listaGanadores, #listaEliminados {
-    list-style: none;
-    padding: 0;
-    max-height: 180px;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-/* Cada elemento de la lista */
-#listaGanadores li, #listaEliminados li {
-    background: rgba(255, 255, 255, 0.5); /* Tarjetas semi-transparentes */
-    color: #5a4540;
-    margin: 0 auto;
-    padding: 12px 20px;
-    border-radius: 12px;
-    font-size: 18px;
-    width: 80%;
-    max-width: 400px;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
-    transition: all 0.2s;
-}
-
-/* Un toque dorado sutil para resaltar al ganador en la lista */
+/* Estructura de las columnas */
 .listas {
     display: flex;
-    gap: 40px;
+    gap: 25px;
     justify-content: center;
     width: 100%;
 }
 
 .columna {
-    flex: 1; /* Esto obliga a que ambas columnas midan exactamente lo mismo */
-    min-width: 250px;
-}
-
-h2 {
-    color: #8c5345;
-    margin-bottom: 15px;
-    font-size: 24px;
-    font-weight: 600;
+    flex: 1;
+    min-width: 240px;
 }
 
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    max-height: 200px;
+    max-height: 220px;
     overflow-y: auto;
-    padding-right: 5px; /* Espacio para que la scrollbar no pise el texto */
+    padding-right: 5px;
 }
 
 li {
-    background: rgba(255,255,255,0.65);
+    background: rgba(255, 255, 255, 0.05);
+    color: #cbd5e1;
     margin-bottom: 10px;
     padding: 12px 15px;
-    border-radius: 12px;
-    font-size: 18px;
-    backdrop-filter: blur(6px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
-    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 14px;
+    font-size: 16px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     box-sizing: border-box;
+    transition: all 0.2s;
 }
 
-/* Estilo exclusivo y elegante para la lista de ganadores */
+/* Estilo exclusivo para resaltar la lista de GANADORES (Efecto neón cian/azul) */
 #listaGanadores li {
-    background: rgba(255, 247, 235, 0.9);
-    color: #8a6421;
-    border: 1px solid rgba(230, 190, 130, 0.3);
+    background: rgba(56, 189, 248, 0.15);
+    color: #38bdf8;
+    border: 1px solid rgba(56, 189, 248, 0.4);
     font-weight: 600;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.15);
 }
 
-/* Efectos de animación */
+/* Estilo para la lista de ELIMINADOS (Un tono más sobrio) */
+#listaEliminados li {
+    background: rgba(255, 255, 255, 0.03);
+    color: #64748b;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Animación cuando aparece el ganador */
 .ganador-efecto {
-    animation: ganador 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+    animation: ganador 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) both;
 }
 
 @keyframes ganador {
-    0% { transform: scale(0.7); opacity: 0; }
-    100% { transform: scale(1); opacity: 1; }
+    0% { transform: scale(0.5); opacity: 0; filter: blur(5px); }
+    100% { transform: scale(1); opacity: 1; filter: blur(0); }
 }
 
-/* Personalización elegante de la barra de desplazamiento */
+/* Personalización de la barra de desplazamiento estilo Gamer/Tech */
 ::-webkit-scrollbar {
     width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-    background: transparent;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #d47660;
+    background: #a855f7; /* Barra morada */
     border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #38bdf8; /* Cambia a azul al pasar el cursor */
 }
